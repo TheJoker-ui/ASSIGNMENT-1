@@ -94,7 +94,7 @@ def delete_user():
     
     # Check if the user is authenticated
     if not email:
-        return jsonify({"error": "User unauthorized"}), 401
+        return jsonify({"error": "User Denied"}), 401
 
     users = load_users()
     if email not in users:
